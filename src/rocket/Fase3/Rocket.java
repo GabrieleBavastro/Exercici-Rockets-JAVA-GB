@@ -31,5 +31,4 @@ public class Rocket {
 	public String toString() {
 		return "Rocket [rocketName=" + rocketName + ", numberOfThrusthers=" + numberOfThrusthers + "]";
 	}
-
 }

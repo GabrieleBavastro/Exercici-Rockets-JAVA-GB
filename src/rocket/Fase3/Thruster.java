@@ -175,5 +175,4 @@ public class Thruster {
 			System.out.println("Escape velocity must be at least of 11 km/s.");
 		}
 	}
-
 }

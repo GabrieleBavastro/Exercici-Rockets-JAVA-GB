@@ -33,7 +33,7 @@ public class Main {
 
 		Thruster.genTh32();
 		Rocket WESSDS32 = new Rocket("32WESSDS", thList32);
-		System.out.println("The rocket 32WESSDS" + " it's equipped with " + thList32.size() + " thrusthers."
+		System.out.println("The rocket 32WESSDS" + " it's equipped with " + thList32.size() + " thrusthers:"
 				+ thList32.toString());
 		rocketList.add(WESSDS32);
 
@@ -49,10 +49,10 @@ public class Main {
 
 		targetSpeed = (scanner.nextDouble());
 
-		Thruster.genThread32();
-		Thruster.genThreadLD();
+		Accelerate.runRockets();
 		Thruster.calculateMaxSpeed();
 		Thruster.resumeActualSpeed();
-
+		
 	}
+
 }

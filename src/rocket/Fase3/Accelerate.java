@@ -34,4 +34,12 @@ class Accelerate implements Runnable {
 	public void brake() {
 		Thread.currentThread().interrupt();
 	}
+
+	public static void runRockets() {
+		Thruster.genThread32();
+		Thruster.genThreadLD();
+    }
+
+
 }
+
