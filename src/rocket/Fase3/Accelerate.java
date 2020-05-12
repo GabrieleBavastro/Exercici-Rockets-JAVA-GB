@@ -11,18 +11,20 @@ class Accelerate implements Runnable {
 	public void run() {
 		try {
 			// Displaying the thread that is running
-			if (Main.speed <= 11 && Main.speed<=Main.targetSpeed) {
-				System.out.println("Thruster " + Main.j + " actual power of " + Main.i + "!");
-				System.out.println("Actual speed of " + Main.speed + " km/s. Increasing Power");
-			} else if (Main.speed >= 11 && Main.speed <= 15 && Main.speed<=Main.targetSpeed) {
-				System.out.println("Thruster " + Main.j + " actual power of " + Main.i + "!");
-				System.out.println(
-						"Actual speed of " + Main.speed + " km/s. You reached the optimal speed! Rocket left Earth!.");
-			} else if (Main.speed >= 12 && Main.speed<=Main.targetSpeed) {
-				System.out.println("Thruster " + Main.j + " actual power of " + Main.i + "!");
-				System.out.println("Actual speed of " + Main.speed
+			if (Thruster.speed <= 11 && Thruster.speed <= Main.targetSpeed) {
+				System.out.println("Thruster " + Thruster.j + " actual power of " + Thruster.i + "!");
+				System.out.println("Actual speed of " + Thruster.speed + " km/s. Increasing Power");
+			} else if (Thruster.speed >= 11 && Thruster.speed <= 15 && Thruster.speed <= Main.targetSpeed) {
+				System.out.println("Thruster " + Thruster.j + " actual power of " + Thruster.i + "!");
+				System.out.println("Actual speed of " + Thruster.speed
+						+ " km/s. You reached the optimal speed! Rocket left Earth!.");
+			} else if (Thruster.speed >= 12 && Thruster.speed <= Main.targetSpeed) {
+				System.out.println("Thruster " + Thruster.j + " actual power of " + Thruster.i + "!");
+				System.out.println("Actual speed of " + Thruster.speed
 						+ " km/s. You are going too much fast! Please stop the thusters!");
-			} else {brake();}
+			} else {
+				brake();
+			}
 		} catch (Exception e) {
 			// Throwing an exception
 			System.out.println("Exception is caught");

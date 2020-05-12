@@ -6,13 +6,13 @@ public class Rocket {
 
 	String rocketName;
 	List<Thruster> numberOfThrusthers;
-	
+
 	public Rocket(String name, List<Thruster> number) {
 		rocketName = name;
 		numberOfThrusthers = number;
-		
+
 		this.setRocketName(rocketName);
-		this.setNumberOfThrusthers (numberOfThrusthers);
+		this.setNumberOfThrusthers(numberOfThrusthers);
 	}
 
 	String getRocketName() {
@@ -21,10 +21,6 @@ public class Rocket {
 
 	private void setRocketName(String rocketName) {
 		this.rocketName = rocketName;
-	}
-
-	private List<Thruster> getNumberOfThrusthers() {
-		return numberOfThrusthers;
 	}
 
 	private void setNumberOfThrusthers(List<Thruster> numberOfThrusthers) {
@@ -36,7 +32,4 @@ public class Rocket {
 		return "Rocket [rocketName=" + rocketName + ", numberOfThrusthers=" + numberOfThrusthers + "]";
 	}
 
-	
 }
-
-
